@@ -4,8 +4,8 @@ container.style.display = 'none';
 weather.onclick = () => {
     container.style.display = 'block';
     fetch('http://api.openweathermap.org/data/2.5/weather?q=Cherkasy,ua&appid=4492edc686e7ddbf42d4433844124e8a')
-        .then(response => { console.log(response) })
-        /*.then(data => {
+        .then(response => { return response.json() })
+        .then(data => {
             container.innerHTML = ' ';
             let weatherCity = document.createElement('p');
             let weatherIcon = document.createElement('img');
@@ -29,7 +29,7 @@ weather.onclick = () => {
             container.appendChild(flexContainer);
             flexContainer.appendChild(weatherTemp);
             flexContainer.appendChild(weatherWind);
-        })*/
+        })
         .catch((error) => {
             new Error(`something wrong with ${error}, click again`);
         });
