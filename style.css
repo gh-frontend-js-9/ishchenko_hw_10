@@ -1,0 +1,55 @@
+body{
+    background-color: #0f4c81;
+    color: #fff;
+    font-family: "Britannic Bold", sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button{
+    background-color: #fff;
+    color: #0f4c81;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: .5em 1em;
+    border-bottom-right-radius: .5em;
+    border-bottom-left-radius: .5em;
+    border: none;
+    outline: none;
+}
+
+.button:hover{
+    background-color: #d3d3d3;
+}
+
+.weather-container{
+    margin: 1em auto;
+    padding: 1em 0;
+    max-width: 200px;
+    border: 2px solid #fff;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.city-name{
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
